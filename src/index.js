@@ -1,0 +1,15 @@
+// Test import of styles
+import './styles/style.scss'
+import logo from './assets/img/logo.svg'
+import avatar1 from './assets/img/avatar1.jpg'
+import avatar2 from './assets/img/avatar2.jpg'
+import avatar3 from './assets/img/avatar3.jpg'
+import avatar4 from './assets/img/avatar4.jpg'
+import avatar5 from './assets/img/avatar5.jpg'
+import pattern from './assets/img/pattern.svg'
+import accountIcon from './assets/img/icon-account.svg'
+import phoneIcon from './assets/img/icon-phone.svg'
+import messageIcon from './assets/img/icon-message.svg'
+import sendIcon from './assets/img/icon-send.svg'
+
+import './js/main'

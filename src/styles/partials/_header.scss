@@ -1,0 +1,110 @@
+.header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  &__inner {
+    margin-left: -15px;
+    margin-right: -15px;
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &__logo {
+    max-width: 2rem;
+    margin-left: 15px;
+    @media screen and (min-width: 768px) {
+      max-width: 3.5rem;
+      margin-left: 0;
+    }
+  }
+  &__scroll-link {
+    margin-right: 15px;
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
+  }
+  &__nav {
+    transform: translateX(-200%);
+    transition: all 0.5s ease-in-out;
+    z-index: 999;
+    top: 50px;
+    @media screen and (min-width: 768px) {
+      transform: translateX(0);
+    }
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+  &__link {
+    @media screen and (min-width: 768px) {
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: $color-blue;
+        transition: width 0.3s ease-in-out;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    @media screen and (min-width: 768px) {
+      max-height: initial;
+      border: 1px solid $color-border;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 125px;
+      z-index: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &__submenu-link {
+    @media screen and (min-width: 768px) {
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: $color-blue;
+        transition: width 0.3s ease-in-out;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.submenu-open {
+  @media screen and (min-width: 768px) {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+    max-height: initial;
+  }
+}
+.submenu-opened i {
+  transform: rotate(-180deg);
+}

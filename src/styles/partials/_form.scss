@@ -1,0 +1,12 @@
+.form {
+  &__input {
+    border: 1px solid $color-gray-light;
+    @include placeholder {
+      font-size: 18px;
+      color: $color-gray-light;
+    }
+  }
+  &__submit {
+    align-self: flex-start;
+  }
+}

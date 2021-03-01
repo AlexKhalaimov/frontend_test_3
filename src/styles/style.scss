@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+@import 'global/_variables.scss';
+@import 'global/_font.scss';
+@import 'global/_common.scss';
+@import 'partials/_header.scss';
+@import 'partials/_hamburger.scss';
+@import 'partials/_buttons.scss';
+@import 'partials/_form.scss';
+@import 'partials/_popup.scss';
+@import 'pages/_main.scss';
+
+@import 'tailwindcss/utilities';

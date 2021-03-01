@@ -1,0 +1,64 @@
+body {
+  font-family: 'ProximaNova';
+  color: $color-gray;
+}
+.color-gray {
+  color: $color-gray;
+}
+.color-black {
+  color: $color-black;
+}
+.color-blue {
+  color: $color-blue;
+}
+.color-green {
+  color: $color-green;
+}
+.color-gray-dark {
+  color: $color-gray-dark;
+}
+.color-gray-light {
+  color: $color-gray-light;
+}
+.color-gray-lighten {
+  color: $color-gray-lighten;
+}
+.color-border {
+  color: $color-border;
+}
+.container {
+  @apply mx-auto px-4;
+  min-width: 100%;
+  @media (min-width: 1024px) {
+    min-width: initial;
+    max-width: 1140px;
+  }
+}
+.circle {
+  &-yellow {
+    background-color: rgba(226, 250, 230, 0.5);
+  }
+  &-blue {
+    background-color: rgba(239, 243, 255, 0.5);
+  }
+}
+.shapes-container {
+  &__pattern {
+    width: 142px;
+    height: 142px;
+  }
+}
+.body-fixed {
+  overflow: hidden;
+  padding-right: 0;
+}
+.icon-chevron {
+  width: 6px;
+  height: 4px;
+  background-image: url(../assets/img/icon-chevron.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
